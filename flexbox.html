@@ -20,8 +20,16 @@
       padding: 1rem;
     }
     .box {
+      width: 10rem;
+      padding: 1rem;
+    }
+    .box-lg {
       width: 20rem;
       padding: 1rem;
+    }
+    .fixed-box {
+      width: 10rem;
+      height: 10rem;
     }
     .box-container {
       background-color: #2d122b;
@@ -72,6 +80,81 @@
     .box-4 {
       background-color: #c72c40;
       color: #fff;
+    }
+    .order-1 {
+      order: 1;
+    }
+    .order-2 {
+      order: 2;
+    }
+    .order-3 {
+      order: 3;
+    }
+    .order-4 {
+      order: 4;
+    }
+    .flex-1-0 {
+      flex: 1 0;
+    }
+    .flex-1-1 {
+      flex: 1 1;
+    }
+    .flex-0-1 {
+      flex: 0 1;
+    }
+    .flex-1-0-200 {
+      flex: 1 0 200px;
+    }
+    .flex-grow-1 {
+      flex-grow: 1;
+    }
+    .flex-grow-0 {
+      flex-grow: 0;
+    }
+    .flex-shrink-1 {
+      flex-shrink: 1;
+    }
+    .flex-shrink-0 {
+      flex-shrink: 0;
+    }
+    .flex-basis-200 {
+      flex-basis: 300px;
+    }
+    .flex-basis-0 {
+      flex-basis: 0;
+    }
+    .flex-basis-auto {
+      flex-basis: auto;
+    }
+    .flex-start {
+      justify-content: start;
+    }
+    .flex-end {
+      justify-content: end;
+    }
+    .flex-center {
+      justify-content: center;
+    }
+    .flex-space-between {
+      justify-content: space-between;
+    }
+    .flex-space-around {
+      justify-content: space-around;
+    }
+    .flex-align-items-flex-start {
+      align-items: flex-start;
+    }
+    .flex-align-items-flex-end {
+      align-items: flex-end;
+    }
+    .flex-align-items-flex-center {
+      align-items: flex-center;
+    }
+    .flex-align-items-flex-baseline {
+      align-items: flex-baseline;
+    }
+    .flex-align-items-flex-stretch {
+      align-items: flex-stretch;
     }
   </style>
 </head>
@@ -208,7 +291,7 @@ this is a sentence with an
   <h2>flex-wrap: nowrap</h2>
 
   <div class="box-container flexbox flex-wrap-nowrap">
-    <div class="box-1 box">
+    <div class="box-1 box-lg">
       <h3>box 1</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -220,7 +303,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-2 box">
+    <div class="box-2 box-lg">
       <h3>box 2</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -232,7 +315,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-3 box">
+    <div class="box-3 box-lg">
       <h3>box 3</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -244,7 +327,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-4 box">
+    <div class="box-4 box-lg">
       <h3>box 4</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -260,7 +343,7 @@ this is a sentence with an
   <h2>flex-wrap: wrap</h2>
 
   <div class="box-container flexbox flex-wrap-wrap">
-    <div class="box-1 box">
+    <div class="box-1 box-lg">
       <h3>box 1</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -272,7 +355,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-2 box">
+    <div class="box-2 box-lg">
       <h3>box 2</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -284,7 +367,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-3 box">
+    <div class="box-3 box-lg">
       <h3>box 3</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -296,7 +379,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-4 box">
+    <div class="box-4 box-lg">
       <h3>box 4</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -311,8 +394,8 @@ this is a sentence with an
 
     <h2>flex-wrap: wrap-reverse</h2>
 
-  <div class="box-container flexbox flex-wrap-reverse">
-    <div class="box-1 box">
+  <div class="box-container flexbox flex-wrap-wrap-reverse">
+    <div class="box-1 box-lg">
       <h3>box 1</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -324,7 +407,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-2 box">
+    <div class="box-2 box-lg">
       <h3>box 2</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -336,7 +419,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-3 box">
+    <div class="box-3 box-lg">
       <h3>box 3</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -348,7 +431,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-4 box">
+    <div class="box-4 box-lg">
       <h3>box 4</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -363,7 +446,7 @@ this is a sentence with an
 
   <h2>flex-flow: row nowrap</h2>
   <div class="box-container flexbox flex-flow-row-nowrap">
-    <div class="box-1 box">
+    <div class="box-1 box-lg">
       <h3>box 1</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -375,7 +458,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-2 box">
+    <div class="box-2 box-lg">
       <h3>box 2</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -387,7 +470,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-3 box">
+    <div class="box-3 box-lg">
       <h3>box 3</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -399,7 +482,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-4 box">
+    <div class="box-4 box-lg">
       <h3>box 4</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -414,7 +497,7 @@ this is a sentence with an
 
   <h2>flex-flow: column wrap</h2>
   <div class="box-container fixed-height flexbox flex-flow-column-wrap">
-    <div class="box-1 box">
+    <div class="box-1 box-lg">
       <h3>box 1</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -426,7 +509,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-2 box">
+    <div class="box-2 box-lg">
       <h3>box 2</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -438,7 +521,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-3 box">
+    <div class="box-3 box-lg">
       <h3>box 3</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -450,7 +533,7 @@ this is a sentence with an
       </p>
     </div>
 
-    <div class="box-4 box">
+    <div class="box-4 box-lg">
       <h3>box 4</h3>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -462,5 +545,333 @@ this is a sentence with an
       </p>
     </div>
   </div>
+
+  <h2>order:</h2>
+  <div class="box-container flexbox">
+    <div class="box-1 box order-3">
+      box 1
+    </div>
+
+    <div class="box-2 box order-1">
+      box 2
+    </div>
+
+    <div class="box-3 box order-2">
+      box 3
+    </div>
+
+    <div class="box-4 box order-4">
+      box 4
+    </div>
+  </div>
+
+  <h2>flex: </h2>
+  <div class="box-container flexbox">
+    <div class="box-1 box flex-1-0">
+      box 1 <br>
+      <code>flex: 1 0</code>
+    </div>
+
+    <div class="box-2 box flex-1-1">
+      box 2 <br>
+      <code>flex: 1 1</code>
+    </div>
+
+    <div class="box-3 box flex-1-0-200">
+      box 3 <br>
+      <code>flex: 1 0 200px</code>
+    </div>
+
+    <div class="box-4 box flex-0-1">
+      box 4 <br>
+     <code>flex: 0 1</code>
+    </div>
+  </div>
+
+  <h2>flex-grow:</h2>
+  <div class="box-container flexbox">
+    <div class="box-1 box flex-grow-0">
+      box 1 <br>
+      <code>flex-grow: 0</code>
+    </div>
+
+    <div class="box-2 box flex-grow-1">
+      box 2 <br>
+      <code>flex-grow: 1</code>
+    </div>
+
+    <div class="box-3 box flex-grow-0">
+      box 3 <br>
+      <code>flex-grow: 0</code>
+    </div>
+
+    <div class="box-4 box flex-grow-0">
+      box 4 <br>
+     <code>flex-grow: 0</code>
+    </div>
+  </div>
+
+  <h2>flex-shrink: </h2>
+    <div class="box-container flexbox">
+    <div class="box-1 box-lg flex-shrink-1">
+      box 1 <br>
+      <code>flex-shrink: 1</code>
+    </div>
+
+    <div class="box-2 box-lg flex-shrink-1">
+      box 2 <br>
+      <code>flex-shrink: 1</code>
+    </div>
+
+    <div class="box-3 box-lg flex-shrink-0">
+      box 3 <br>
+      <code>flex-shrink: 0</code>
+    </div>
+
+    <div class="box-4 box-lg flex-shrink-1">
+      box 4 <br>
+     <code>flex-shrink: 1</code>
+    </div>
+  </div>
+
+  <h2>flex-basis:</h2>
+  <div class="box-container flexbox">
+    <div class="box-1 box flex-basis-200">
+      box 1 <br>
+      <code>flex-basis: 200px</code>
+    </div>
+
+    <div class="box-2 box flex-basis-0">
+      box 2 <br>
+      <code>flex-basis: 0</code>
+    </div>
+
+    <div class="box-3 box flex-basis-auto">
+      box 3 <br>
+      <code>flex-basis: auto</code>
+    </div>
+
+    <div class="box-4 box flex-basis-auto">
+      box 4 <br>
+     <code>flex-grow: auto</code>
+    </div>
+  </div>
+
+  <h2>justify-content: flex-start</h2>
+  <div class="box-container flexbox flex-start">
+    <div class="box-1 box">
+      box 1
+    </div>
+
+    <div class="box-2 box">
+      box 2
+    </div>
+
+    <div class="box-3 box">
+      box 3
+    </div>
+
+    <div class="box-4 box">
+      box 4
+    </div>
+  </div>
+
+  <h2>justify-content: flex-end</h2>
+  <div class="box-container flexbox flex-end">
+    <div class="box-1 box">
+      box 1
+    </div>
+
+    <div class="box-2 box">
+      box 2
+    </div>
+
+    <div class="box-3 box">
+      box 3
+    </div>
+
+    <div class="box-4 box">
+      box 4
+    </div>
+  </div>
+
+  <h2>justify-content: flex-center</h2>
+  <div class="box-container flexbox flex-center">
+    <div class="box-1 box">
+      box 1
+    </div>
+
+    <div class="box-2 box">
+      box 2
+    </div>
+
+    <div class="box-3 box">
+      box 3
+    </div>
+
+    <div class="box-4 box">
+      box 4
+    </div>
+  </div>
+
+  <h2>justify-content: space-between</h2>
+  <div class="box-container flexbox flex-space-between">
+    <div class="box-1 box">
+      box 1
+    </div>
+
+    <div class="box-2 box">
+      box 2
+    </div>
+
+    <div class="box-3 box">
+      box 3
+    </div>
+
+    <div class="box-4 box">
+      box 4
+    </div>
+  </div>
+
+  <h2>justify-content: space-around</h2>
+  <div class="box-container flexbox flex-space-around">
+    <div class="box-1 box">
+      box 1
+    </div>
+
+    <div class="box-2 box">
+      box 2
+    </div>
+
+    <div class="box-3 box">
+      box 3
+    </div>
+
+    <div class="box-4 box">
+      box 4
+    </div>
+  </div>
+
+
+  <h2>align-item: flex-start</h2>
+  <div class="box-container flexbox fixed-height flex-align-items-flex-start">
+    <div class="box-1 box fixed-box">
+      box 1 <br>
+    </div>
+
+    <div class="box-2 box fixed-box">
+      box 2 <br>
+    </div>
+
+    <div class="box-3 box fixed-box">
+      box 3 <br>
+    </div>
+
+    <div class="box-4 box fixed-box">
+      box 4 <br>
+    </div>
+
+    <div class="box-5 box fixed-box">
+      box 5 <br>
+    </div>
+  </div>
+
+  <h2>align-item: flex-end</h2>
+  <div class="box-container flexbox fixed-height flex-align-items-flex-end">
+    <div class="box-1 box fixed-box">
+      box 1 <br>
+    </div>
+
+    <div class="box-2 box fixed-box">
+      box 2 <br>
+    </div>
+
+    <div class="box-3 box fixed-box">
+      box 3 <br>
+    </div>
+
+    <div class="box-4 box fixed-box">
+      box 4 <br>
+    </div>
+
+    <div class="box-5 box fixed-box">
+      box 5 <br>
+    </div>
+  </div>
+
+
+  <h2>align-item: flex-center</h2>
+  <div class="box-container flexbox fixed-height flex-align-items-flex-center">
+    <div class="box-1 box fixed-box">
+      box 1 <br>
+    </div>
+
+    <div class="box-2 box fixed-box">
+      box 2 <br>
+    </div>
+
+    <div class="box-3 box fixed-box">
+      box 3 <br>
+    </div>
+
+    <div class="box-4 box fixed-box">
+      box 4 <br>
+    </div>
+
+    <div class="box-5 box fixed-box">
+      box 5 <br>
+    </div>
+  </div>
+
+  <h2>align-item: flex-baseline</h2>
+  <div class="box-container flexbox fixed-height flex-align-items-flex-baseline">
+    <div class="box-1 box fixed-box">
+      box 1 <br>
+    </div>
+
+    <div class="box-2 box fixed-box">
+      box 2 <br>
+    </div>
+
+    <div class="box-3 box fixed-box">
+      box 3 <br>
+    </div>
+
+    <div class="box-4 box fixed-box">
+      box 4 <br>
+    </div>
+
+    <div class="box-5 box fixed-box">
+      box 5 <br>
+    </div>
+  </div>
+
+
+  <h2>align-item: flex-stretch</h2>
+  <div class="box-container flexbox fixed-height flex-align-items-flex-stretch">
+    <div class="box-1 box fixed-box">
+      box 1 <br>
+    </div>
+
+    <div class="box-2 box fixed-box">
+      box 2 <br>
+    </div>
+
+    <div class="box-3 box fixed-box">
+      box 3 <br>
+    </div>
+
+    <div class="box-4 box fixed-box">
+      box 4 <br>
+    </div>
+
+    <div class="box-5 box fixed-box">
+      box 5 <br>
+    </div>
+  </div>
+
+
+
+
 </body>
 </html>
